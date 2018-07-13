@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="TrabalhoEconomiaOficial.View.OfertaDemandaPage">
+    <StackLayout>
+        <ScrollView>
+            <StackLayout>
+                <StackLayout Padding="10">
+                    <Label Text="Oferta e demanda" TextColor="Black" FontSize="Large" FontAttributes="Bold" Margin="0,0,0,20" HorizontalOptions="Center" />
+                    <Label HorizontalTextAlignment="Start" TextColor="Black" Text="Oferta e Demanda são duas forças que garantem o funcionamento de uma economia de mercado. Elas determinam preços e a quantidade vendida.&#xA;A oferta se refere à quantidade de produtos oferecidos, ou seja, àquilo o que a empresa quer ou pode vender. Seus principais determinantes são: preço de mercado, tecnologia, preço de insumos(conjunto de todos os “fatores” necessários para a fabricação de um produto, não confunda com matéria prima, que é apenas o material base de um produto), expectativa e número de produtores.&#xA;A lei da oferta afirma que, tudo mais mantido constante, a quantidade ofertada do bem aumenta quando o seu preço aumenta(é o que se observa na curva da oferta O, na figura abaixo, que nada mais é que uma linha com inclinação positiva relacionando preço e quantidade ofertada, que obedece a lei da oferta, ao aumentar a quantidade ofertada de Qx para Qv o preço aumenta de Px para Pv).&#xA;" />
+                    <Image Source="imagem04.png" HeightRequest="200" WidthRequest="200" Margin="0,0,0,20" />
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+                        <Label Grid.RowSpan="2" Grid.Column="0" Grid.Row="0" Text="Oferta" HorizontalOptions="Center" VerticalOptions="Center" FontSize="Large" FontAttributes="Bold" TextColor="Black" />
+                        <Button Grid.Column="1" Grid.Row="0" BackgroundColor="Green" Text="Aumentar" TextColor="White" Command="{Binding AumentarClicked}"/>
+                        <Button Grid.Column="1" Grid.Row="1" BackgroundColor="Maroon" Text="Diminuir" TextColor="White" Command="{Binding DiminuirClicked}"/>
+                    </Grid>
+                </StackLayout>
+                <StackLayout IsVisible="{Binding OfertaAumentaVisible}" Padding="10">
+                    <Image Source="ofertaprocurabotao1" HeightRequest="200" WidthRequest="200"  Margin="0,0,0,20"/>
+                    <Label HorizontalTextAlignment="Start" TextColor="#ba0912" Text="Aumento da oferta: desloca a curva de oferta para a direita, sendo assim,o produto terá  uma quantidade demandada maior por um mesmo preço.(ex: levava 7 laranjas por 2 reais, agora leva 11 por 2 reais)"/>
+                </StackLayout>
+                <StackLayout IsVisible="{Binding OfertaDiminuiVisible}" Padding="10">
+                    <Image  Source="ofertaprocurabotao2" HeightRequest="195" WidthRequest="195"  Margin="0,0,0,20"/>
+                    <Label HorizontalTextAlignment="Start" TextColor="#ba0912" Text="Diminuição da oferta: desloca a curva de oferta pra esquerda, sendo assim, o produto terá uma quantidade demandada menor por um mesmo preço.(ex: levava 7 laranjas por 2 reais, agora leva 4 laranjas por 2 reais)"/>
+                </StackLayout>
+                <StackLayout Padding="10">
+                    <Label TextColor="Black" HorizontalTextAlignment="Start" Text="A demanda se refere à quantidade que os consumidores querem ou podem adquirir de um produto, ou seja, a sua procura. Seus principais determinantes são: preço do mercado, renda do consumidor, preço de bens relacionados(ou são bens substitutos, no qual, através do seu consumo de um produto, é possível satisfazer a mesma necessidade causada por outro produto, ou seja , quando uma queda no preço de um bem reduz a demanda por outro bem, por exemplo, manteiga e margarina, pois na falta de manteiga, a margarina supre essa necessidade, e ao diminuir o preço da manteiga, diminuirá a demanda por  margarina, dado que a manteiga tem maior qualidade; ou são bens complementares, quando, para satisfazer determinada necessidade, for necessário consumir dois bens em simultâneo, ou seja, quando uma queda no preço de um bem aumenta a demanda por outro bem, por exemplo computador e softwares, ao consumir um computador, você necessariamente precisa de um software para poder exercer as funções básicas desse utensílio, assim se o preço do computador cair, aumentará a demanda por softwares), gostos do consumidor e número de consumidores. 
+    A curva de demanda é uma linha negativamente inclinada relacionando preços e quantidades demandadas. Assim, ela é o “inverso” da oferta, dado que ao aumentar a quantidade demanda de Qx para Qv(na figura abaixo), o preço diminui de Px para Pv(mesma figura). "/>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </StackLayout>
+</ContentPage>

@@ -1,0 +1,17 @@
+﻿using System;
+using System.Collections.Generic;
+using TrabalhoEconomiaOficial.ViewModel;
+
+using Xamarin.Forms;
+
+namespace TrabalhoEconomiaOficial.View
+{
+    public partial class OfertaDemandaPage : ContentPage
+    {
+        public OfertaDemandaPage()
+        {
+            InitializeComponent();
+            BindingContext = new OfertaDemandaViewModel();
+        }
+    }
+}
