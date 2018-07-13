@@ -1,4 +1,5 @@
-﻿using Xamarin.Forms;
+﻿using TrabalhoEconomiaOficial.View;
+using Xamarin.Forms;
 
 namespace TrabalhoEconomiaOficial
 {
@@ -8,7 +9,12 @@ namespace TrabalhoEconomiaOficial
         {
             InitializeComponent();
 
-            MainPage = new TrabalhoEconomiaOficialPage();
+            MainPage = new NavigationPage(new StartPage())
+            {
+                BarTextColor = Color.White,
+                BarBackgroundColor = Color.Blue,
+
+            };
         }
 
         protected override void OnStart()

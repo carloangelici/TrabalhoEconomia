@@ -1,5 +1,66 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="TrabalhoEconomiaOficial.View.IsLmPage">
-    <ContentPage.Content>
-    </ContentPage.Content>
+    <StackLayout>
+        <ScrollView>
+            <StackLayout Padding="10" Orientation="Vertical">
+                <StackLayout>
+                    <Label TextColor="Black" FontSize="Large" HorizontalOptions="Center" FontAttributes="Bold" Text=" Modelo IS/LM" />
+                    <Label TextColor="Black" HorizontalOptions="Center" HorizontalTextAlignment="Start" Text="IS/LM é um modelo que visa estudar o mercado de bens e o mercado monetário juntos, interagindo conjuntamente. Esse modelo tem como objetivo dar base para se entender como funcionam as políticas fiscal e monetária, e para isso é necessário entender como funcionam as curvas IS e LM, pra assim poder entender como funciona o modelo IS e LM. E para isso, é necessário saber o que é taxa de juros, e produto(ou renda).&#xA;    Esse modelo indica as consequências das políticas monetárias e fiscal. Por exemplo, esse modelo se os impostos/tributos forem aumentados, e os gastos do governo reduzidos e há uma redução da expansão monetária, assim, como o aumento dos tributos vai gerar uma diminuição da renda disponível, vai gerar uma diminuição na demanda, e aumentar as arrecadações do governo. Ou seja o modelo IS-LM representa o equilíbrio entre o mercado de bens e o mercado monetário, em outras palavras o equilíbrio entre a curva IS e a curva LM. (No gráfico abaixo, i seria a taxa de juros e Y seria o produto(renda))." />
+<!--                    <Image Source="islmoriginal.png" HeightRequest="200" WidthRequest="200"/>
+-->                    <StackLayout>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+                            <Label Grid.RowSpan="2" Grid.Column="0" Grid.Row="0" Text="Fiscal" HorizontalOptions="Center" VerticalOptions="Center" FontSize="Large" FontAttributes="Bold" TextColor="Black" />
+                            <Button Grid.Column="1" Grid.Row="0" BackgroundColor="Green" Text="Expansao" TextColor="White" Command="{Binding ExpansaoFiscalClicked}" />
+                            <Button Grid.Column="1" Grid.Row="1" BackgroundColor="Maroon" Text="Retracao" TextColor="White" Command="{Binding RetracaoFiscalClicked}" />
+                        </Grid>
+                    </StackLayout>
+                    <StackLayout IsVisible="{Binding ExpansaoFiscalVisible}" Padding="10">
+                        <Image Source="islmfiscalexpansao.png" HeightRequest="200" WidthRequest="200" Margin="0,0,0,20" />
+                        <Label HorizontalTextAlignment="Start" TextColor="#ba0912" Text="Expansão Fiscal: Com o aumento dos gastos do governo, a cruz keynesiana se eleva em questão dos gastos planejados. Isso estimula a produção, o que traz como consequência o aumento de Y. No mercado monetário, há mais dinheiro sendo demandado para toda taxa de juro r. Como a oferta monetária não mudou, maior demanda por dinheiro leva a uma taxa de juros mais alta. A elevação da taxa de juros causa um corte nos investimentos nas firmas, que compensa parcialmente o efeito expansionista de G em Y. Expansões fiscais, portanto, tem um efeito de crowding out sobre o investimento." />
+                    </StackLayout>
+                    <StackLayout IsVisible="{Binding RetracaoFiscalVisible}" Padding="10">
+                        <Image Source="islmficalretracao.png" HeightRequest="200" WidthRequest="200" Margin="0,0,0,20" />
+                        <Label HorizontalTextAlignment="Start" TextColor="#ba0912" Text="Contração Fiscal: Uma diminuição nos gastos do governo reduz os gastos planejados e, portanto, a renda de equilíbrio na cruz keynesiana. Isso provoca uma queda na renda Y. No mercado monetário, uma renda menor diminui a demanda por moeda a cada taxa de juros. Como a oferta de moeda M está inalterada, a menor demanda de dinheiro leva a uma taxa de juros mais baixa. Uma taxa de juros menor faz com que as empresas aumentem os gastos com investimentos. Isso reduz parcialmente os efeitos contracionistas da redução nos gastos do governo G sobre a renda Y." />
+                    </StackLayout>
+                    <StackLayout IsVisible="{Binding OriginalVisible}">
+                        <Image Source="islmoriginal.png"/>
+                    </StackLayout>
+                    <StackLayout>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+                            <Label Grid.RowSpan="2" Grid.Column="0" Grid.Row="0" Text="Monetaria" HorizontalOptions="Center" VerticalOptions="Center" FontSize="Large" FontAttributes="Bold" TextColor="Black" />
+                            <Button Grid.Column="1" Grid.Row="0" BackgroundColor="Green" Text="Expansao" TextColor="White" Command="{Binding ExpansaoMonetariaClicked}" />
+                            <Button Grid.Column="1" Grid.Row="1" BackgroundColor="Maroon" Text="Retracao" TextColor="White" Command="{Binding RetracaoMonetariaClicked}" />
+                        </Grid>
+                    </StackLayout>
+                    <StackLayout IsVisible="{Binding ExpansaoMonetariaVisible}" Padding="10">
+                        <Image Source="islmmonetariaexpansao.png" HeightRequest="200" WidthRequest="200" Margin="0,0,0,20" />
+                        <Label HorizontalTextAlignment="Start" TextColor="#ba0912" Text="Expansão Monetária: Um aumento na oferta monetária M aumenta os saldos em dinheiro real M / P, pois o nível de preços é fixo no curto prazo. A teoria das preferências de liquidez nos mostra que um aumento nos saldos monetários reais reduz a taxa de juros para cada nível de renda. Isso ocorre porque as pessoas detêm mais dinheiro do que estão dispostas a manter na taxa de juros vigente. Uma taxa de juros menor aumenta o investimento e, portanto, a renda. Isso é mostrado pelo deslocamento para a direita da curva LM e pelo novo equilíbrio, com uma taxa de juros mais baixa e uma renda mais alta." />
+                    </StackLayout>
+                    <StackLayout IsVisible="{Binding RetracaoMonetariaVisible}" Padding="10">
+                        <Image Source="islmmonetariocontracao.png" HeightRequest="200" WidthRequest="200" Margin="0,0,0,20" />
+                        <Label HorizontalTextAlignment="Start" TextColor="#ba0912" Text="Contração Monetária: Um decréscimo na oferta monetária M diminui os saldos monetários reais de M / P, uma vez que o nível de preços é fixo a curto prazo. A teoria das preferências de liquidez nos mostra que uma diminuição nos saldos de moeda real aumenta a taxa de juros para cada nível de renda. Isso ocorre porque as pessoas têm menos dinheiro do que estão dispostas a manter à taxa de juros vigente. Uma taxa de juros mais alta diminui o investimento e, portanto, a renda. Isso é mostrado pelo deslocamento para a esquerda da curva LM e o novo equilíbrio com uma taxa de juros mais alta e uma renda mais baixa." />
+                    </StackLayout>
+                    <StackLayout IsVisible="{Binding OriginalVisible}">
+                        <Image Source="islmoriginal.png"/>
+                    </StackLayout>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </StackLayout>
 </ContentPage>

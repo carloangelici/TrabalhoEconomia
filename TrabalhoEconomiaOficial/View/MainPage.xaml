@@ -1,5 +1,8 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="TrabalhoEconomiaOficial.View.MainPage">
-    <ContentPage.Content>
-    </ContentPage.Content>
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="TrabalhoEconomiaOficial.View.MainPage" Title="Trabalho Final de Economia">
+    <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+        <Label Text="Escolha um dos temas abaixo:" TextColor="Black" FontAttributes="Bold" FontSize="Medium" Margin="0,0,0,30"/>
+        <Button Text="Microeconomia" TextColor="White" BackgroundColor="Blue" HeightRequest="100" WidthRequest="200" Command="{Binding OnMicroClicked}"/>
+        <Button Text="Macroeconomia" TextColor="White" BackgroundColor="Blue" HeightRequest="100" WidthRequest="200" Command="{Binding OnMacroClicked}"/>
+    </StackLayout>
 </ContentPage>

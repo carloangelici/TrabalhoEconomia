@@ -8,12 +8,7 @@ namespace TrabalhoEconomiaOficial.ViewModel
     {
         public ContabilidadeNacionalViewModel()
         {
-            Content = new StackLayout
-            {
-                Children = {
-                    new Label { Text = "Hello ContentPage" }
-                }
-            };
+            
         }
     }
 }

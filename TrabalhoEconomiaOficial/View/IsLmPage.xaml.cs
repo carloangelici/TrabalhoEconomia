@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using TrabalhoEconomiaOficial.ViewModel;
 
 using Xamarin.Forms;
 
@@ -10,6 +11,7 @@ namespace TrabalhoEconomiaOficial.View
         public IsLmPage()
         {
             InitializeComponent();
+            BindingContext = new IsLmViewModel();
         }
     }
 }

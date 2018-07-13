@@ -1,5 +1,19 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="TrabalhoEconomiaOficial.View.MainMacroPage">
-    <ContentPage.Content>
-    </ContentPage.Content>
+    <StackLayout>
+        <ScrollView>
+    <StackLayout VerticalOptions="Start" HorizontalOptions="Center" Padding="0,20,0,0">
+        <Label Text="Macroeconomia" FontSize="Large" HorizontalOptions="Center" />
+        <StackLayout Padding="10" HorizontalOptions="FillAndExpand">
+            <Label  Margin="0,0,0,20" HorizontalTextAlignment="Start" Text="A macroeconomia, diferente da micro, tem uma visão mais ampla da economia, não se foca tanto em características específicas da economia, mas sim em características gerais. O estudo dela é focado nos Estados, nas economias nacionais e nas relações econômicas internacionais, baseando-se em indicadores como o Produto Interno Bruto(PIB), Produto Nacional Bruto(PNB),desemprego, inflação, taxa de juros, câmbio, balança comercial. Ou seja, a macroeconomia baseia-se nesses aspectos para ter noção de como a economia nacional está, dado que nossos representantes políticos precisam analisar a economia do país de forma geral para tomar suas decisões, que em geral impactam a vida de todos." TextColor="Black" />
+            <Label Text="Deslize para baixo e escolha um dos topicos sobre o tema" TextColor="Black" FontSize="Large" HorizontalTextAlignment="Center"/>
+        </StackLayout>
+        <StackLayout Padding="10">
+        <Button Text="Contabilidade Nacional" TextColor="White" BackgroundColor="Blue" Margin="0,0,0,10" Command="{Binding OnContabilidadeNacionalClicked}"/>
+        <Button Text="Inflaçao" TextColor="White" BackgroundColor="Blue" Margin="0,0,0,10" Command="{Binding OnInflacaoClicked}"/>
+        <Button Text="Modelo IS/LM" TextColor="White" BackgroundColor="Blue" Command="{Binding OnIsLmClicked}"/>
+            </StackLayout>
+    </StackLayout>
+            </ScrollView>
+        </StackLayout>
 </ContentPage>

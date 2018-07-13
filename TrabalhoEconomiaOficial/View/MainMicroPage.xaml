@@ -1,5 +1,19 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="TrabalhoEconomiaOficial.View.MainMicroPage">
-    <ContentPage.Content>
-    </ContentPage.Content>
+    <StackLayout>
+        <ScrollView>
+    <StackLayout VerticalOptions="Start" HorizontalOptions="Center" Padding="0,20,0,0">
+        <Label Text="Microeconomia" FontSize="Large" HorizontalOptions="Center" />
+        <StackLayout Padding="10" HorizontalOptions="FillAndExpand">
+            <Label Margin="0,0,0,20" HorizontalTextAlignment="Start" Text="Enquanto a macroeconomia se preocupa com o todo,  A microeconomia tem uma maior preocupação com os detalhes. Assim sendo, ela se refere aos indivíduos e suas ações e às empresas e outras partes do processo produtivo, desenvolvendo estudos baseada em teorias importantes como a teoria do consumidor(que tenta entender o comportamento e escolhas das pessoas na economia, tentando por exemplo entender a relação entre renda e a demanda de bens normais, bens inferiores, bens substitutos e bens complementares); a teoria da empresa(mais focada na corporações e a relação entre capital e trabalho); e a teoria da produção(que analisa a evolução do processo produtivo em seus mínimos detalhes). Exemplos de casos práticos estão na análise de diferença de salário entre mulheres e homens,  decisões de produtores e consumidores e crescimento de cada setor na economia. " TextColor="Black" />
+            <Label  Text="Deslize para baixo e escolha um dos topicos sobre o tema" TextColor="Black" FontSize="Large" HorizontalTextAlignment="Center"/>
+        </StackLayout>
+        <StackLayout Padding="10">
+        <Button Text="Oferta e Demanda" TextColor="White" BackgroundColor="Blue" Margin="0,0,0,10" Command="{Binding OnOfertaDemandaClicked}"/>
+        <Button Text="Teoria dos Custos" TextColor="White" BackgroundColor="Blue" Margin="0,0,0,10" Command="{Binding OnTeoriaCustosClicked}"/>
+        <Button Text="Elasticidade" TextColor="White" BackgroundColor="Blue" Command="{Binding OnElasticidadeClicked}"/>
+            </StackLayout>
+    </StackLayout>
+            </ScrollView>
+        </StackLayout>
 </ContentPage>
