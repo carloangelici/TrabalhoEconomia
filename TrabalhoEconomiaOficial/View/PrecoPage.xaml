@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="TrabalhoEconomiaOficial.View.PrecoPage">
+    <StackLayout>
+        <ScrollView>
+            <StackLayout Padding="10">
+                <Label Text="Elasticidade-Preço da Demanda" TextColor="Black" HorizontalOptions="Center" FontAttributes="Bold" Margin="0,0,0,20"/>
+                <Label HorizontalTextAlignment="Start" TextColor="Black" Text="mede a sensibilidade da demanda de determinado produto/bem quando ocorrem variações no preço do mesmo. Essa demanda pode ser elástica(E>1,quando o preço do produto varia, e a demanda do produto varia muito; um exemplo poderia ser um produto com muitos produtos substitutos[explicado em oferta e demanda]) ou inelástica(E é menor que 1, quando o preço do produto varia, e a demanda do produto varia pouco, um exemplo seria um produto essencial, como por exemplo produtos ligados a saúde, como shampoos, condicionadores, sabonetes)"/>
+                <Label Text="E = Qf-Qi/Qix100 / Pf -Pi/Pi x100" HorizontalTextAlignment="Start" TextColor="Black"  HorizontalOptions="Center" FontAttributes="Bold"/>
+                <Label Text="Onde: Q= quantidade demandada, P =preço, f = final e i = inicial" HorizontalTextAlignment="Start" TextColor="Black" />
+            </StackLayout>
+        </ScrollView>
+    </StackLayout>
+</ContentPage>

@@ -1,5 +1,17 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="TrabalhoEconomiaOficial.View.ElasticidadePage">
-    <ContentPage.Content>
-    </ContentPage.Content>
+    <StackLayout>
+        <ScrollView>
+            <StackLayout Padding="10">
+                <StackLayout>
+                    <Label Text="Elasticidade" FontSize="Large" FontAttributes="Bold" HorizontalOptions="Center" Margin="0,0,0,20"/>
+                    <Label HorizontalTextAlignment="Start" TextColor="Black" Text="Elasticidade é a medida de sensibilidade(dado que em economia sensibilidade é sinônimo de elasticidade) da variação percentual da quantidade demandada em relação à variação percentual dos preços ou vendas, ou seja, reação de uma variável, em razão de mudanças em outras variáveis.
+Tivemos, em aula, 3 tipos de elasticidade da demanda, sendo elas:" Margin="0,0,0,20"/>
+                    <Button TextColor="White" BackgroundColor="Blue" Text="Elasticidade-Renda da Demanda" Command="{Binding RendaClicked}" Margin="0,0,0,10"/>
+                    <Button TextColor="White" BackgroundColor="Blue" Text="Elasticidade-Preço da Demanda" Command="{Binding PrecoClicked}" Margin="0,0,0,10"/>
+                    <Button TextColor="White" BackgroundColor="Blue" Text="Elasticidade-Cruzada da Demanda" Command="{Binding CruzadaClicked}"/>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </StackLayout>
 </ContentPage>

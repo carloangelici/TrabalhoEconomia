@@ -56,6 +56,10 @@
                     <Image Source="diminuidemandabotao.png" HeightRequest="200" WidthRequest="200" Margin="0,0,0,20" />
                     <Label HorizontalTextAlignment="Start" TextColor="#ba0912" Text="Diminuição da demanda: desloca a curva de demanda pra esquerda, sendo assim, o produto terá uma quantidade demandada menor devido à algum fator que aumentou o preço. (ex: aumentou imposto sobre o café, assim café fica mais caro, gerando assim, menor demanda)." />
                 </StackLayout>
+                <StackLayout Padding="10">
+                    <Label HorizontalTextAlignment="Start" TextColor="Black" Text="Em Economia a relação entre a oferta e a demanda é representada por um gráfico onde existe um único ponto de encontro conhecido como ponto de equilíbrio. Ele indica o preço que o produto precisa ter para que sua oferta no mercado seja igual à sua procura. Quando se alcança o equilíbrio de mercado, não existe nem excesso nem escassez de produto, e a tendência é de que haja uma estabilização de preços." Margin="0,0,0,20" />
+                    <Image Source="equilibrio.png" HeightRequest="200" WidthRequest="200" />
+                </StackLayout>
             </StackLayout>
         </ScrollView>
     </StackLayout>

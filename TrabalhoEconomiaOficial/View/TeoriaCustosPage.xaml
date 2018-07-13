@@ -1,5 +1,20 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="TrabalhoEconomiaOficial.View.TeoriaCustosPage">
-    <ContentPage.Content>
-    </ContentPage.Content>
+    <StackLayout>
+        <ScrollView>
+            <StackLayout Padding="10">
+                <StackLayout>
+                    <Label Text="Teoria dos Custos" Margin="0,0,0,20" TextColor="Black" FontSize="Large" HorizontalOptions="Center"/>
+                    <Label TextColor="Black" HorizontalTextAlignment="Start" Text="Teoria dos custos: A teoria dos custos visa explicar em um modelo numérico, comportamentos de custos e lucros de uma empresa, e são variáveis desses cálculos, custo marginal, custo médio, custo de oportunidade e custo total.
+    Para entender a teoria dos custos, precisamos entender os custos de produção chamado também de custo total(CT), que nada mais é que a soma de custos fixos(CF, que  correspondem ao emprego dos fatores de produção fixos, ou seja, são custos assumidos independentemente do número de unidades produzidas no período analisados. São eles: prédio, máquinas, equipamentos, impostos, seguros, juros, custos de conservação e depreciação) com custos variáveis(CV, que é a somatória dos pagamentos que a empresa faz pelo uso dos fatores variáveis. Ele varia de acordo com o volume de produção da firma, incluindo itens como matérias-primas, energia elétrica, mão-de-obra, e afins).
+    E para estimar o custo médio, é feito uma divisão do custo total pela quantidade produzida(1), dado que o custo médio fixo é dado pela divisão do custo fixo dividido pela quantidade produzida(2), e o custo médio variável é dado pela divisão do custo variável pela quantidade produzida(3) e como o custo médio nada mais é que a somatória de(2) com (3) tem se (1)."/>
+                    <Image Source="elasticidade1.png" HeightRequest="300" WidthRequest="300"/>
+                    <Label TextColor="Black" HorizontalTextAlignment="Start"  Text="Por fim, o custo marginal é o custo total no período (t) menos o custo total no período anterior (t-1) dividido pela quantidade produzida no período (t) menos a quantidade produzida no período anterior (t-1):"/>
+                    <Image Source="elasticidade2.png" HeightRequest="200" WidthRequest="200" Margin="0,-20,0,-20"/>
+                    <Label Text="E custo de oportunidade: São custos associados a desembolsos e pagamentos, estão associados a uma oportunidade que a empresa deixa de investir ou de aplicar." TextColor="Black" HorizontalTextAlignment="Start"/>
+                    <Image Source="teoria.png" HeightRequest="200" WidthRequest="200" Margin="0,20,0,0"/>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </StackLayout>
 </ContentPage>

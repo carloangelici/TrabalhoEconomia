@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="TrabalhoEconomiaOficial.View.StartPage" >
     <StackLayout Orientation="Vertical" VerticalOptions="Center" Padding="20">
-        <Label Text="Trabalho Final Economia-ACH2047" TextColor="Black" HorizontalOptions="Center" FontAttributes="Bold" Margin="0,0,0,20" />
-        <Label Text="Bruno Akio Shirasuna - 9778800" TextColor="Black" HorizontalOptions="Center" />
-        <Label Text="Carlo Adas Angelici - 9778644" TextColor="Black" HorizontalOptions="Center" />
-        <Label Text="Flavio Issamu Kagohara - 9778800" TextColor="Black" HorizontalOptions="Center" />
-        <Label Text="Ygor Nanni de Carvalho- 9778690" TextColor="Black" HorizontalOptions="Center" />
-        <Button Text="Começar" TextColor="White" BackgroundColor="Blue" Command="{Binding OnButtonClicked}" WidthRequest="200" Margin="0,50,0,0" />
+        <Label Text="Trabalho Final Economia" TextColor="Black" HorizontalOptions="Center" FontAttributes="Bold" FontSize="Large"/>
+        <Label Text="ACH2047" TextColor="Black" HorizontalOptions="Center" FontAttributes="Bold" Margin="0,0,0,20" FontSize="Large"/>
+        <Label Text="Bruno Akio Shirasuna - 9778800" TextColor="Black" HorizontalOptions="Center" FontAttributes="Bold"/>
+        <Label Text="Carlo Adas Angelici - 9778644" TextColor="Black" HorizontalOptions="Center" FontAttributes="Bold"/>
+        <Label Text="Flavio Issamu Kagohara - 9778800" TextColor="Black" HorizontalOptions="Center" FontAttributes="Bold"/>
+        <Label Text="Ygor Nanni de Carvalho- 9778690" TextColor="Black" HorizontalOptions="Center" FontAttributes="Bold"/>
+        <Button Text="Começar" FontAttributes="Bold" FontSize="Large" TextColor="White" BackgroundColor="Blue" Command="{Binding OnButtonClicked}" WidthRequest="200" Margin="0,50,0,0" />
     </StackLayout>
 </ContentPage>

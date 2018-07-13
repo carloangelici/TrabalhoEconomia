@@ -10,7 +10,7 @@
         </StackLayout>
         <StackLayout Padding="10">
         <Button Text="Contabilidade Nacional" TextColor="White" BackgroundColor="Blue" Margin="0,0,0,10" Command="{Binding OnContabilidadeNacionalClicked}"/>
-        <Button Text="Inflaçao" TextColor="White" BackgroundColor="Blue" Margin="0,0,0,10" Command="{Binding OnInflacaoClicked}"/>
+        <Button Text="Inflação" TextColor="White" BackgroundColor="Blue" Margin="0,0,0,10" Command="{Binding OnInflacaoClicked}"/>
         <Button Text="Modelo IS/LM" TextColor="White" BackgroundColor="Blue" Command="{Binding OnIsLmClicked}"/>
             </StackLayout>
     </StackLayout>

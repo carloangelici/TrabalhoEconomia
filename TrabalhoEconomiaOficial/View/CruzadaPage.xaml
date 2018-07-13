@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="TrabalhoEconomiaOficial.View.CruzadaPage">
+    <StackLayout>
+        <ScrollView>
+            <StackLayout Padding="10">
+                <Label Text="Elasticidade-Cruzada da Demanda" TextColor="Black" HorizontalOptions="Center" FontAttributes="Bold" Margin="0,0,0,20" />
+                <Label HorizontalTextAlignment="Start" Margin="0,0,0,20" TextColor="Black" Text="Mede a variação na quantidade demandada de um produto quando o preço de outro bem(substituto ou complementar ao bem em questão) varia. Ela pode ser: positiva(E&gt;0, quando o aumento do preço de um produto causa um aumento na demanda de um bem substituto a este produto[explicado em oferta e demanda]) ou negativa(E é menor que 0, quando o aumento do preço de um produto causa uma queda na demanda de um bem completar a este produto[explicado em oferta e demanda]). " />
+                <Label Text=" E = Qf-Qi/Qix100 / Pyf - Pyi/Pyix100" HorizontalTextAlignment="Start" TextColor="Black" HorizontalOptions="Center" FontAttributes="Bold"/>
+                <Label HorizontalTextAlignment="Start" TextColor="Black" Text="Onde: Q = quantidade demandada, Py = preço do produto y, f = final e i = inicial" />
+            </StackLayout>
+        </ScrollView>
+    </StackLayout>
+</ContentPage>

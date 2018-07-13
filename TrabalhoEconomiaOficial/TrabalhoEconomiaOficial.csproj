@@ -70,6 +70,18 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\RendaPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\PrecoPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\CruzadaPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
@@ -120,6 +132,18 @@
     <Compile Include="View\OfertaDemandaPage.xaml.cs">
       <DependentUpon>OfertaDemandaPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\RendaPage.xaml.cs">
+      <DependentUpon>RendaPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModel\RendaViewModel.cs" />
+    <Compile Include="View\PrecoPage.xaml.cs">
+      <DependentUpon>PrecoPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModel\PrecoViewModel.cs" />
+    <Compile Include="View\CruzadaPage.xaml.cs">
+      <DependentUpon>CruzadaPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModel\CruzadaViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Xamarin.Forms.Core">

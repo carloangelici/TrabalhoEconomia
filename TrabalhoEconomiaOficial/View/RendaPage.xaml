@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="TrabalhoEconomiaOficial.View.RendaPage">
+    <StackLayout>
+        <ScrollView>
+            <StackLayout Padding="10">
+                <Label Text="Elasticidade-Renda da Demanda" TextColor="Black" HorizontalOptions="Center" FontAttributes="Bold" Margin="0,0,0,20"/>
+                <Label HorizontalTextAlignment="Start" TextColor="Black" Text="Está relacionado ao que acontece com a quantidade demandada dada uma alteração na renda do consumidor, e ela pode ser positiva(E>0, quando a renda do consumidor aumenta(diminui), a demanda pelo produto aumenta(diminui), sendo chamados de bens normais)ou negativa (E é menor que 0, quando a renda do consumidor aumenta(diminui), a quantidade do produto diminui(aumenta), considerados bens inferiores)"/>
+                <Label Text="E = Qf-Qi/Qi x100 / If-Ii/Ii x100" HorizontalTextAlignment="Start" TextColor="Black"  HorizontalOptions="Center" FontAttributes="Bold"/>
+                <Label Text="Onde: Q =quantidade demandada, I = renda, f = final e i = inicial" HorizontalTextAlignment="Start" TextColor="Black" />
+            </StackLayout>
+        </ScrollView>
+    </StackLayout>
+</ContentPage>

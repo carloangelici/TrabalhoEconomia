@@ -163,6 +163,18 @@
     <BundleResource Include="Resources\islmoriginal.png" />
     <BundleResource Include="Resources\islmoriginal%402x.png" />
     <BundleResource Include="Resources\islmoriginal%403x.png" />
+    <BundleResource Include="Resources\elasticidade2.png" />
+    <BundleResource Include="Resources\elasticidade2%402x.png" />
+    <BundleResource Include="Resources\elasticidade2%403x.png" />
+    <BundleResource Include="Resources\elasticidade1.png" />
+    <BundleResource Include="Resources\elasticidade1%402x.png" />
+    <BundleResource Include="Resources\elasticidade1%403x.png" />
+    <BundleResource Include="Resources\teoria.png" />
+    <BundleResource Include="Resources\teoria%402x.png" />
+    <BundleResource Include="Resources\teoria%403x.png" />
+    <BundleResource Include="Resources\equilibrio.png" />
+    <BundleResource Include="Resources\equilibrio%402x.png" />
+    <BundleResource Include="Resources\equilibrio%403x.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Forms.2.5.0.121934\build\netstandard1.0\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.2.5.0.121934\build\netstandard1.0\Xamarin.Forms.targets')" />
