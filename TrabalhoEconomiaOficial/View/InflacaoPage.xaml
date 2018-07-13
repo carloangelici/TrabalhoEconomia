@@ -1,5 +1,19 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="TrabalhoEconomiaOficial.View.InflacaoPage">
-    <ContentPage.Content>
-    </ContentPage.Content>
+    <StackLayout>
+        <ScrollView>
+            <StackLayout Padding="10">
+                <StackLayout>
+                    <Label Text="Inflacao" TextColor="Black" HorizontalOptions="Center" FontAttributes="Bold" FontSize="Large" />
+                    <Label Text="Inflação é um aumento sustentado dos preços dos bens e dos serviços, ou seja, falando de maneira simples, uma alta dos preços.  Deflação é o seu oposto, ou seja, uma queda de preços. No Brasil, há 4 índices que precisam ser entendidos para podermos entender como funciona a inflação, são eles: Índice Nacional de Preços ao Consumidor Amplo (IPCA, que é responsável por medir mensalmente a variação média no custo de vida de famílias com renda mensal de até 40 salários mínimos, que ocorre em 11 regiões metropolitanas do país.); o Índice Nacional de Preços ao Consumidor (INPC, que é um índice mensal para medir a variação do custo de vida, porém em famílias com renda entre 1 e 5 salários mínimos); o Índice de Preços ao Consumidor Semanal (IPC-S, que é aplicado de 10 em 10 dias sendo o índice responsável por verificar o preço de 388 produtos da cesta básica, esses produtos estão nas seguintes categorias: higiene, serviços, alimentação e produtos de limpeza) e o Índice Geral de Preços – Disponibilidade Interna (IGP-DI, que mensalmente realiza a verificação dos preços dos processos produtivos, como por exemplo da matéria-prima industrial e agrícola, dos produtos intermediários e serviços e por fim, o bem final). Baseado nesses índices que se mede e direciona a inflação no Brasil, tendo como o INPC e o IPCA como principais índices medidos pelo IBGE(Instituto Brasileiro de Geografia e Estatística).
+A inflação causa efeitos internos e externos. Internamente, resulta no aumento da quantidade de dinheiro para a aquisição de produtos. Já, externamente, ocorre a desvalorização da moeda. 
+E só para constar a inflação pode não ser a mesma para todo mundo, dado que as cestas básicas de cada indivíduo pode ser diferente, por exemplo uma pessoa tem em sua cesta básica tem batatas, já outra pessoa não tem, na época da greve dos caminhoneiros, a cesta básica da primeira pessoa inflacionou, porém a da segunda não sofreu o mesmo efeito." TextColor="Black" HorizontalTextAlignment="Start"/>
+    <Label Text="Digite um ano entre 2007 e 2017 para verificar a inflacao IPCA acumulado" FontAttributes="Bold" HorizontalOptions="Center" HorizontalTextAlignment="Start"/>
+                    <Entry Text="{Binding Ano}" TextColor="Black" WidthRequest="100" Placeholder="Ano" PlaceholderColor="Black" HorizontalOptions="Center"/>
+                    <Label Text="{Binding Inflacao}" TextColor="Black" HorizontalOptions="Center" FontAttributes="Bold" FontSize="Large"/>
+                    <Button Text="Mostrar inflacao" BackgroundColor="Blue" TextColor="White" Command="{Binding OnMostrarInflacaoClicked}"/>                   
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </StackLayout>
 </ContentPage>

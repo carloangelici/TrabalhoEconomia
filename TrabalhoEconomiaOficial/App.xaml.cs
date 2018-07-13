@@ -9,7 +9,7 @@ namespace TrabalhoEconomiaOficial
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new StartPage())
+            MainPage = new NavigationPage(new InflacaoPage())
             {
                 BarTextColor = Color.White,
                 BarBackgroundColor = Color.Blue,
